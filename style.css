@@ -29,7 +29,7 @@ main{
     flex:wrap;
     justify-content: space-between;
 }
-.contry-card{
+.country-card{
     display: inline-block;
     width: 250px;
     border-radius: 4px;
