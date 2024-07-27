@@ -9,7 +9,7 @@ const region = document.querySelector('.region')
 const subRegion = document.querySelector('.sub-region')
 
 
-const tdomain = document.querySelector('.L-Domain')
+const topLevelDomain = document.querySelector('.L-Domain')
 const currencies = document.querySelector('.currencies')
 const capital = document.querySelector('.capital')
 const languages = document.querySelector('.language')
@@ -28,6 +28,7 @@ fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
     region.innerText=country.region;
     subRegion.innerText = country.subregion
     // tdomain.innerText=country
+    topLevelDomain.innerText = country.tld.join(', ')
     
 
     if (country.currencies) {
