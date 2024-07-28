@@ -46,7 +46,7 @@
 
 
 const countriesContainer = document.querySelector('.countries-container')
-
+const filterByRegion = document.querySelector('.filter-by-region')
 
 fetch('https://restcountries.com/v3.1/all')
   .then((res) =>  res.json())
@@ -70,7 +70,11 @@ fetch('https://restcountries.com/v3.1/all')
         countriesContainer.append(countryCard)
     })
   })
+  
 
+  filterByRegion.addEventListener('change', (e) => {
+   
+  })
 
 
 
